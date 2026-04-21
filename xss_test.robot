@@ -5,7 +5,7 @@ Library          SeleniumLibrary
 *** Variables ***
 ${URL}           http://localhost:3000/
 ${BROWSER}       headlesschrome
-# We URL-encode the payload just like a browser would in a real phishing link
+# URL-encode the payload just like a browser would in a real phishing link
 ${XSS_LINK}      http://localhost:3000/#/search?q=%3Ciframe%20src%3D%22javascript%3Aalert('XSS%20Hack%20Successful!')%22%3E
 
 *** Test Cases ***
